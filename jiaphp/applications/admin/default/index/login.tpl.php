@@ -83,7 +83,7 @@ body{ background:#267cb7}
 				<td >
                <p style="font-size: 12px;
     color: #83b7ce;
-    line-height: 1.8em;">版权所有 深圳市慧名科技有限公司 Copyright © 2014 - {date('Y')} huimingai.com Inc. All Rights Reserved.
+    line-height: 1.8em;">版权所有 深圳市美藤科技有限公司 Copyright © 2014 - {date('Y')} huimingai.com Inc. All Rights Reserved.
 
                </p>
                </td>

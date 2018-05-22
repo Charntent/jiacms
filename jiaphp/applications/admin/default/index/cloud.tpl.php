@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>登录系统_慧名科技内容管理系统</title>
+	<title>登录系统_美藤科技内容管理系统</title>
 	<link rel="stylesheet" href="{$skins_admin}/login/cloud/font-awesome.css">
 	<!--[if IE 7]>
 	<link rel="stylesheet" href="{$skins_admin}/login/cloud/font-awesome-ie7.css">
@@ -24,7 +24,7 @@
    <div class="loginbox pop_fadein">
 		<div class="title">
 			<div class="logo"></div>
-			<div class='info'>慧名科技内容管理系统</div>
+			<div class='info'>美藤科技内容管理系统</div>
 		</div>
 		<form method="post" action="{U($m.'/index')}" name="form1">
         <input name="action" type="hidden" value="login">
@@ -45,7 +45,7 @@
 		</form>
 	</div><a href=""></a>
 	<div class="footer">
-	Powered by <a href="http://www.mitent.com" target="_blank">慧名科技内容管理系统</a> | © 2014-{date("Y")} All Rights Reserved.
+	Powered by <a href="http://www.mitent.com" target="_blank">美藤科技内容管理系统</a> | © 2014-{date("Y")} All Rights Reserved.
 	</div>
 	<script src="{$skins_admin}/login/cloud/jquery-1.8.2.min.js"></script>
 <script src="{$skins_admin}/login/cloud/jQuery.easing.js"></script>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>后台|JIACMS|慧名科技内容管理系统_<?php echo S('sitename') ?></title>
+<title>后台|JIACMS|美藤科技内容管理系统_<?php echo S('sitename') ?></title>
 
 <link href="<?php echo $skins_admin ?>/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $skins_admin ?>/base.css" rel="stylesheet" type="text/css">

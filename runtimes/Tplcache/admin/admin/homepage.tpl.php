@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>慧名科技内容管理系统</title>
+<title>美藤科技内容管理系统</title>
 <link href="<?php echo $skins_admin ?>/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $skins_admin ?>/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="<?php echo $skins_admin ?>/jquery-1.4.2.min.js"></script>
@@ -243,7 +243,7 @@ function closeDebug() {
   
      <div class="alert alert-info alert-dismissable">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-      <?php echo $_SESSION['admin_username'] ?>你好，欢迎来到慧名科技后台管理系统！
+      <?php echo $_SESSION['admin_username'] ?>你好，欢迎来到美藤科技后台管理系统！
       <?php $r = $db->getfield("select * from admin where password='e10adc3949ba59abbe56e057f20f883e'"); ?>
       <?php if($debug || $r) { ?>
         <?php if($debug) { ?>
@@ -317,7 +317,7 @@ $ly_nums = $db->getfield("select count(id) as total from guestbook where pid=0  
       <div class="visual"> <i class="glyphicon glyphicon-tint"></i> </div>
       <div class="details">
         <div class="number"> <span data-counter="counterup" data-value="89">藤系设计</span> </div>
-        <div class="desc"> JIASHOP慧名商城 </div>
+        <div class="desc"> JIASHOP美藤商城 </div>
       </div>
       <span class="more"> 查看更多 <i class="fa fa-arrow-circle-right pull-right"></i> </span> </div>
     </a> </div>
@@ -330,17 +330,17 @@ $ly_nums = $db->getfield("select count(id) as total from guestbook where pid=0  
       </div>
       <div class="panel-body panel-body-297px">
         <ul class="list-group">
-          <li class="list-group-item">HI ，<span style="color: #cc0000;"><?php echo $_SESSION['admin_username'] ?></span> ，欢迎您登陆慧名科技后台管理系统。 </li>
+          <li class="list-group-item">HI ，<span style="color: #cc0000;"><?php echo $_SESSION['admin_username'] ?></span> ，欢迎您登陆美藤科技后台管理系统。 </li>
           <li class="list-group-item">用户ID：<?php echo $_SESSION['admin_username'] ?></li>
           <li class="list-group-item">用户级别：管理员<span class="pull-right"><a href="<?php echo U($m.'/admin') ?>?action=edit&id=<?php echo session('admin_nid') ?>" class="more"><span>修改信息</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
           <li class="list-group-item"> 当前密码 　　[<?php if($r) { ?>原始密码<?php } else { ?>好密码<?php } ?>] <a href="<?php echo U($m.'/admin') ?>?action=edit&id=<?php echo session('admin_nid') ?>" class="recharge more pull-right"> <span>修改密码</span><i class="fa fa-arrow-circle-right pull-right"></i> </a> </li>
-          <li class="list-group-item">主程开发： 　　[<a href="http://www.jiacms.com" target="_blank">慧名CMS团队</a>]</li>
+          <li class="list-group-item">主程开发： 　　[<a href="http://www.jiacms.com" target="_blank">美藤CMS团队</a>]</li>
           <li class="list-group-item">当前版本 　　[<a href="http://cms.jiacms.com" target="_blank"><?php echo VERSION; ?></a>]<span class="pull-right"><a href="http://cms.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
           
-           <li class="list-group-item">慧名模板 　　[<a href="http://mb.jiacms.com" target="_blank">极客建站</a>]<span class="pull-right"><a href="http://mb.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
+           <li class="list-group-item">美藤模板 　　[<a href="http://mb.jiacms.com" target="_blank">极客建站</a>]<span class="pull-right"><a href="http://mb.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
            
-            <li class="list-group-item">慧名官网 　　[<a href="http://www.jiacms.com" target="_blank">http://www.jiacms.com</a>]<span class="pull-right"><a href="http://www.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
-             <li class="list-group-item">慧名商城 　　[<a href="http://cms.jiacms.com" target="_blank">微信、PC、手机三合一</a>]<span class="pull-right"><a href="http://cms.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
+            <li class="list-group-item">美藤官网 　　[<a href="http://www.jiacms.com" target="_blank">http://www.jiacms.com</a>]<span class="pull-right"><a href="http://www.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
+             <li class="list-group-item">美藤商城 　　[<a href="http://cms.jiacms.com" target="_blank">微信、PC、手机三合一</a>]<span class="pull-right"><a href="http://cms.jiacms.com" class="more" target="_blank"><span>查看更多</span><i class="fa fa-arrow-circle-right"></i></a></span></li>
           
           
         </ul>
@@ -372,7 +372,7 @@ $ly_nums = $db->getfield("select count(id) as total from guestbook where pid=0  
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-users fa-fw"></i>慧名动态</h3>
+        <h3 class="panel-title"><i class="fa fa-users fa-fw"></i>美藤动态</h3>
       </div>
       <div class="panel-body-297px">
       
@@ -437,17 +437,17 @@ $ly_nums = $db->getfield("select count(id) as total from guestbook where pid=0  
 
 
 
-<div style="margin:10px 30px 0px; padding-bottom:20px;">深圳慧名科技有限公司（<a href="http://www.8888i.com" target="_blank">www.8888i.com</a>）版权所有 &copy; 2014-<?php echo date("Y") ?></div>
+<div style="margin:10px 30px 0px; padding-bottom:20px;">深圳美藤科技有限公司（<a href="http://www.ziyouteng.com" target="_blank">www.ziyouteng.com</a>）版权所有 &copy; 2014-<?php echo date("Y") ?></div>
 <!-- 右侧扩展功能 -->
 <div class="ext" style="top:0px;">
   <div class="ext_title"><img src="<?php echo $skins_admin ?>/ext_t.jpg" width="88" height="25"></div>
   <div class="ext_func">
     <ul>
-      <li><a class="ico1" href="http://www.8888i.com/services.html" target="_blank">网站推广</a></li>
+      <li><a class="ico1" href="http://www.ziyouteng.com/services.html" target="_blank">网站推广</a></li>
       <li class="cur"><a class="ico2" href="https://web.umeng.com/main.php?c=user&a=login" target="_blank">流量统计</a></li>
       <li><a class="ico3" href="javascript:;">在线客服</a></li>
       <li><a class="ico4" href="javascript:;">手机网站</a></li>
-      <li><a class="ico5" href="http://www.8888i.com" target="_blank">网站续费</a></li>
+      <li><a class="ico5" href="http://www.ziyouteng.com" target="_blank">网站续费</a></li>
       <li><a class="ico5" href="http://www.kancloud.cn/wlcms/doc/297950" target="_blank">操作指示</a></li>
     </ul>
   </div>

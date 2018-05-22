@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>慧名科技内容管理系统</title>
+<title>美藤科技内容管理系统</title>
 <link href="{$skins_admin}/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="{$skins_admin}/base.css" rel="stylesheet" type="text/css">
 

@@ -2,12 +2,12 @@
 
 $lang["positionstr"] ="您的位置";
 /*system*/
-$lang['system_author'] = '慧名科技';
-$lang['system_name'] = '慧名网站管理系统';
-$lang['system_adminname'] = '慧名网站后台管理中心';
+$lang['system_author'] = '美藤科技';
+$lang['system_name'] = '美藤网站管理系统';
+$lang['system_adminname'] = '美藤网站后台管理中心';
 $lang['system_link'] = '#';
 $lang['system_version'] = '2.2(20130305)';
-$lang['system_copy'] = '© 2012 慧名网站网络科技.';
+$lang['system_copy'] = '© 2012 美藤网站网络科技.';
 $lang['zhuzuo'] = 'CTPHP（1.0）长藤著作';
 /*base*/
 $lang['order'] = '顺序';
