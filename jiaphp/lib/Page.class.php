@@ -3,8 +3,8 @@
 /**
  * CWCMS  PAGE数据库分页操作文件
  * ============================================================================
- * * 版权所有 2013-2025 深圳美藤科技有限公司，并保留所有权利。
- * 网站地址: http://www.ziyouteng.com；
+ * * 版权所有 2013-2025 深圳慧名科技有限公司，并保留所有权利。
+ * 网站地址: http://www.8888i.com；
  * ----------------------------------------------------------------------------
  * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
  * 使用；不允许对程序代码以任何形式任何目的的再发布。
@@ -98,7 +98,7 @@ class Page{
 					if($i==$nowpage){
 						$page_content .= '<a href="javascript:void(0);" style="background:#CCC">'.($i+1).'</a>';
 					}else if($i==0){
-						$page .= '<a href="javascript:void(0);" class="case-js" data-href="'.$nowurl.'?'.trim($param,'&').'">'.($i+1).'</a>';
+						$page_content .= '<a href="javascript:void(0);" class="case-js" data-href="'.$nowurl.'?'.trim($param,'&').'">'.($i+1).'</a>';
 					}else{
 						$page_content .= '<a href="javascript:void(0);" class="case-js" data-href="'.$nowurl.'?'.$param.'page='.$i.'">'.($i+1).'</a>';
 					}
@@ -124,17 +124,17 @@ class Page{
 		    break;
 			case 'amazeui':
 				
-				if($this->start>0) $page_content .= '<li class="am-disabled"><a href="javascript:void(0);" class="case-js"  data-href="'.$nowurl.'?'.trim($param,'&').'">'.$wl_lang['first_page'].'</a></li>';
+				if($this->start>0) $page_content .= '<li class="am-disabled"><a  class="case-js"  href="'.$nowurl.($file_prefix?'.'.$file_prefix:'').($param?'?':'').trim($param,'&').'">'.$wl_lang['first_page'].'</a></li>';
 				for($i=$startpage;$i<$endpage;$i++){
 					if($i==$nowpage){
 						$page_content .= '<li class="am-active"><a href="javascript:void(0);">'.($i+1).'</a></li>';
 					}else if($i==0){
-						$page_content .= '<li> <a  class="case-js" href="'.$nowurl.'?'.trim($param,'&').'">'.($i+1).'</a></li>';
+						$page_content .= '<li> <a  class="case-js" href="'.$nowurl.($file_prefix?'.'.$file_prefix:'').($param?'?':'').trim($param,'&').'">'.($i+1).'</a></li>';
 					}else{
-						$page_content .= '<li> <a class="case-js" href="'.$nowurl.'?'.$param.'page='.$i.'">'.($i+1).'</a></li>';
+						$page_content .= '<li> <a class="case-js" href="'.$nowurl.$page_str.$i.($file_prefix?'.'.$file_prefix:'').$param.'">'.($i+1).'</a></li>';
 					}
 				}
-				if($totalpage>1 && ($nowpage+1)!=$totalpage) $page_content .= '<li><a href="javascript:void(0);"   class="case-js" data-href="'.$nowurl.'?'.$param.'page='.($totalpage-1).'">'.$wl_lang['last_page'].'</a></li>';
+				if($totalpage>1 && ($nowpage+1)!=$totalpage) $page_content .= '<li><a  class="case-js" href="'.$nowurl.$page_str.($totalpage-1).($file_prefix?'.'.$file_prefix:'').$param.'">'.$wl_lang['last_page'].'</a></li>';
 			
 			break;
 			case -5:
